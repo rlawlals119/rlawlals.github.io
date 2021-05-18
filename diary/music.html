@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+      <!-- 합쳐지고 최소화된 최신 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+      <!-- 부가적인 테마 -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+      <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <meta charset="uft-8">
+      <title>그림</title>
+      <style>
+        html, body{
+          height:100%;
+        }
+        
+        body{
+          width:100%;
+          background-color: gray;
+          display:flex;
+          flex-direction: column;
+        }
+        .container{
+          bottom:0px;
+          display: flex;
+          flex-direction: column;
+        }
+        footer{
+          position:"pixed";
+          left:0px;
+          bottom:0px;
+          width:100%;
+          height:100px;
+          background-color: rgb(77, 74, 74);
+          color:white;
+         }
+         <!--V2:표의 첫번째 행 글자 굵기 설정-->
+         #row1{
+          font-weight: 700;
+         }
+         <!--V2:표 안의 글씨들 기울임체 추가-->
+         td{
+           font-style: italic;
+         }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <br>
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="introduce.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true">d</a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="introduce.html">introduce <span class="sr-only">(dcurrent)</span></a></li>
+                  <li class="dropdown">
+                    <a href="music.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="worklist.html">오늘 할 일</a></li>
+                      <li><a href="animal.html">동물사진</a></li>
+                      <li class="active"><a href="music.html">PALY LIST</a></li>
+                      <li class="divider"></li>
+                      <li><a href="https://github.com/rlawlals119">github</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+          <table class="table table-striped">
+            <tr id=row1>
+                  <td>#</td>
+                  <td>MUSIC</td>
+                  <td>SINGER</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>춤</td>
+              <td>민수</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>괜히</td>
+              <td>민수</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>I Like Me</td>
+              <td>민수</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>I'm in L but</td>
+              <td>SOUND PALETTE</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>문득</td>
+              <td>윤지영</td>
+              <tr>
+                <td>7</td>
+                <td>세탁소</td>
+                <td>유라</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>깜빡</td>
+                <td>유라</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Juice</td>
+                <td>Lizzo</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>과제곡</td>
+                <td>이무진</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>산책</td>
+                <td>이무진</td>
+              </tr>
+            </tr>
+          </table>
+      </div>
+      <footer>
+            This is footer
+      </footer>
+  </body>

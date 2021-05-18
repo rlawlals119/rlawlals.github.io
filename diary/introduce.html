@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+      <!-- 합쳐지고 최소화된 최신 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+      <!-- 부가적인 테마 -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+      <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <meta charset="uft-8">
+      <title>To-Do List</title>
+    <!--V2:내용 선택자와 flex box로 정렬-->
+      <style>
+          html, body{
+          height:100%;
+        }
+        
+        body{
+          width:100%;
+          background-color: gray;
+          display:flex;
+          flex-direction: column;
+        }
+          .container{
+            display: felx;
+            flex-direction: column;
+          }
+          footer{
+              position:"pixed";
+              left:0px;
+              bottom:0px;
+              width:100%;
+              height:60px;
+              background-color: rgb(77, 74, 74);
+              color:white;
+          }
+          #title{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-around;
+          }
+          .baby{
+            
+          }
+          h2{
+            bottom:0;
+            background-color: rgba(255, 214, 139, 0.856);
+            margin:0;
+          }
+          .content{
+            bottom:0;
+            background-color: rgb(255, 255, 175);
+            margin:0;
+          }
+          h4{
+            height: 30px;
+            bottom:0;
+            background-color: wheat;
+          }
+          h5{
+            bottom:0;
+              background-color: pink;
+              border-color:plum;
+          }
+      </style>
+  </head>
+  <body>
+<div class="container">
+    <br>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></a>
+          </div>
+      
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="introduce.html">introduce <span class="sr-only">(dcurrent)</span></a></li>
+              <li class="dropdown">
+                <a href="music.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="worklist.html">오늘 할 일</a></li>
+                  <li><a href="animal.html">동물사진</a></li>
+                  <li><a href="music.html">PALY LIST</a></li>
+                  <li class="divider"></li>
+                  <li><a href="https://github.com/rlawlals119">github</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-right" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <h1></h1>
+    <h2>김지민</h2> <br>
+    <br>
+<div id="title">
+    <img class="baby" src="baby.jpg" height=300>
+    <br><br>
+   <h4>출생: 2001.01.19</h4></div><br><br>
+   <h5><학력></h5><br>
+   <p class="content">2019, 복자여자고등학교 졸업<br>
+   2020, 한국기술교육대학교 컴퓨터공학부 입학<br>
+   2020, 한국기술교육대학교 11대 학생회 부원<br>
+   2021, 한국기술교육대학교 12대 학생회 부원<br>
+   2021, 멋쟁이사저처럼 9기</p><br>
+   <br><br>
+   취미: 그림그리기, 기타치기, 헬스하기, 노래듣기<br><br>
+  
+   <footer>
+    this is footer
+    <a href="https://github.com/rlawlals119">github</a>
+</footer>
+</div>
+
+  </body>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    
+
+      <!-- 합쳐지고 최소화된 최신 CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+      <!-- 부가적인 테마 -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+      <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+      <meta charset="uft-8">
+      <title>Diary</title>
+
+      <style>
+        html, body{
+          height:100%;
+        }
+        
+        body{
+          width:100%;
+          background-color: gray;
+          display:flex;
+          flex-direction: column;
+        }
+        #main{
+          flex:1;
+        }
+        footer{
+          position:"fixed";
+          bottom:0;
+          left:0;
+          height:60px;
+          width:100%;
+          background-color: rgb(78, 75, 75);
+          color:white
+        }
+        .a{
+          display:flex;
+          flex-direction: row;
+        }
+        <!--V2:썸네일 이미지들을 flex 박스를 이용하여 정렬-->
+      </style>
+      
+  </head>
+  <body>
+    <!--V2:네비게이션바 디자인 수정-->
+      <div class="container">
+          <br>
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="introduce.html"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span></a>
+              </div>
+          
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="introduce.html">introduce <span class="sr-only">(dcurrent)</span></a></li>
+                  <li class="dropdown">
+                    <a href="music.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="worklist.html">오늘 할 일</a></li>
+                      <li><a href="animal.html">동물사진</a></li>
+                      <li><a href="music.html">PALY LIST</a></li>
+                      <li class="divider"></li>
+                      <li><a href="https://github.com/rlawlals119">github</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+      <h1></h1>
+      <div id="main">
+      <!--V2:저의 취미들을 의미하는 아이콘들로 썸네일을 구성하였습니다-->
+      <div class="container-fluid">
+      <div class="row">
+          <a href="thumb.png" class="thumbnail">
+            <img src="thumb.png" alt="이 사진은 썸네일 입니다.">
+          </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="col-sm-3 col-md-2">
+  <div id="a">
+    <div class="thumbnail">
+      <img src="jpg1.jpg" alt="d">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p></p>
+        <p><a href="jpg1.jpg" class="btn btn-primary" role="button">Button</a>
+        <a href="jpg2.jpg" class="btn btn-default" role="button">Button</a></p>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+<footer>
+  This is footer
+</footer>
+  </body>
+
+</html>
